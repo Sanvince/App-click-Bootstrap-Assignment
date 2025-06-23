@@ -2,15 +2,25 @@ body{
   margin: 0;
   padding: 0;
 }
-
-.image-logo{
-  width: 300px;
-  height: 500%;
+h2,
+p,
+h1{
+  margin: ;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-
-.Sign-In-btn{
-  background-color: rgb(19, 212, 19);
+.right-nav{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex:30%;
+  justify-content: end;
+}
+.create-btn{
   border: none;
   width: fit-content;
   padding: 6px 15px;
@@ -23,50 +33,79 @@ body{
 }
 
 .left-nav{
-    display: flex;
-    align-items:last baseline ;
-} 
+flex: 30%;
+}
+.middle-nav{
+flex: 40%;
+display: flex;
 
+}
 .logo{
-  width: 150px
+  width: 300px
 }
 .profile-image{
+  width: 1000px;
+  height: 900px;
+  
+}
+.input-box{
+  background-color: chartreuse;
+  height: 40px;
+  border: 1px solid black; 
+  border-radius: 20px;
+  overflow: hidden;
+}
+input{
+  width: 100%;
+  height: 100%;
+  padding-left: 10px;
+  outline: none;
+  border: none;
+}
+
+
+.Sign-In{
+  border-radius: 80%;
+  margin-left: 20px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: green
+}
+
+.create-btn i{
+  margin-right: 5px;
+}
+
+.notification{
+  border: none;
   width: 30px;
   height: 30px;
   border-radius: 50%;
-}
-.input-box{
-  background-color: chartreuse;
-  height: 40px;
-  border: 1px solid black; 
-  border-radius: 20px;
-  overflow: hidden;
-}
-input{
-  width: 100%;
-  height: 90%;
-  padding-right: 10px;
-  outline: none;
-  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
-.input-box{
-  background-color: chartreuse;
-  height: 40px;
-  border: 1px solid black; 
-  border-radius: 20px;
-  overflow: hidden;
+.notification:hover{
+  background-color: rgb(225, 225, 225);
 }
-input{
-  width: 100%;
-  height: 90%;
-  padding-bottom: 10px;
-  outline: none;
+.notification button {
+  background-color: none;
   border: none;
 }
-
-.Sign-In btn{
-  width: 100%;
-  height: 90%;
+.notification div{
+  width: fit-content;
+  border-radius: 6px;
+  font-weight: 600;
+  padding: 0px 3px;
+  background-color: rgb(196, 5, 5);
+  font-style: 10px;
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
+
 
